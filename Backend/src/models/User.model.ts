@@ -3,8 +3,8 @@ import { Schema, Types, model } from 'mongoose';
 
 
 interface IUser { 
-    fullname: string,
-    username: string,
+    fullName: string,
+    userName: string,
     email:string,
     password:string
 
@@ -12,10 +12,10 @@ interface IUser {
 
 
 const userSchema = new mongoose.Schema<IUser>({
-  fullname:{
+  fullName:{
     type: String,
   },
-  username:{
+  userName:{
     type:String,
     require:true
   },
